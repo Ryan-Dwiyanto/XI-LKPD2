@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-    $lama = 14;
+    $lama = 9;
     $jam = 8;
     echo "Lama Kerja : $lama Jam <br>";
     if ($lama > $jam) {
@@ -16,10 +16,10 @@
         if ($lama > $jam + 1){
             $lebih = $lama - ($jam + 1);
             $kompensasi = 50000 + ($lebih * 25000);
-            echo "Jumlah Kompensasi : Rp ".number_format($kompensasi, 0, ',','.');
+            echo "Jumlah Kompensasi : Rp ".number_format($kompensasi, 2, ',','.');
         } else {
             $kompensasi = 50000;
-            echo "Jumlah Kompensasi : Rp ".number_format($kompensasi, 0, ',','.');
+            echo "Jumlah Kompensasi : Rp ".number_format($kompensasi, 2, ',','.');
         }
     } else {
         echo "Tidak Ada Uang Kompensasi";
